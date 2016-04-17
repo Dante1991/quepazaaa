@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{Title}</title>
+
+
+<style type="text/css">
+*{
+    padding:0;
+    margin:0;
+    border:0;
+}
+
+body{
+    font-family:monospace,sans-serif;
+    font-size:1.1em;
+    background:#2476f0 url('http://atextures.com/wp-content/uploads/2014/08/Yellow-and-Black-Stripes-Metal-Background-625x390.jpg') repeat fixed;
+    color:#F6F6F6;
+    }
+
+.dsq-widget-comment{
+    font-size:0.7em;
+}
+
+.dsq-widget-thread{
+    font-size:0.9em;
+}
+
+p{
+    font-size:1.3em;
+    text-align:center;
+    font-weight:100;
+    margin-bottom:15px;
+    }
+    
+p.derecha{
+    font-size:1em;
+    text-align:right;
+    }
+
+h1{
+    font-size:2em;
+    text-align:center;
+    font-weight:bold;
+    text-transform:uppercase;
+    }
+
+h2{
+    font-size:1em;
+    text-align:center;
+    font-weight:bold;
+    text-transform:uppercase;
+    }
+    
+h3{
+    font-size:0.7em;
+    text-align:center;
+    text-transform:uppercase;
+    }
+
+h4{
+    font-size:0.8em;
+    text-align:center;
+    font-weight:normal;
+    }
+
+h5{
+    font-size:0.7em;
+    text-align:center;
+    font-weight:bold;
+    text-transform:uppercase;
+    }
+    
+h6{
+    font-size:0.8em;
+    text-align:left;
+    font-weight:normal;
+    }
+    
+h7{
+    font-size:0.8em;
+    text-align:right;
+    font-weight:normal;
+    }
+
+h8{
+    font-size:1.4em;
+    font-weight:bold;
+    }
+
+a{
+    color:#f2992e;
+    text-decoration:none;
+    -webkit-transition: all 0.3s;
+}
+
+a:hover{
+    color:#FFD800;
+}
+
+#barra_superior{
+    width:100%;
+    margin:0px auto;
+    top:0;
+    background:#222222;
+    position:fixed;
+    z-index:1;
+}
+
+#menu_barra_superior{
+    width:878px;
+    margin:0 auto;
+    background:#222222;
+}
+
+#contenedor{
+    width:882px;
+    margin:29px auto 0px auto;
+    height:auto;
+}
+
+#cabecera{
+    width:862px;
+    
+    background:url('http://assets.tumblr.com/images/x.gif?v=1') no-repeat center;
+    float:left;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow:hidden;
+}
+
+#fondo_cabecera{
+    width:862px;
+    margin:30px auto 0px auto;
+    padding:10px;
+    
+    top:0px;
+    z-index:-1;
+    background:#0da517 url('http://assets.tumblr.com/images/x.gif?v=1') repeat-x;
+}
+
+#contenedor_logo{
+    width:300px;
+    padding:0px 5px 5px 5px;
+    position:relative;
+    float:right;
+    overflow:hidden;
+}
+
+#cuerpo{
+    width:860px;
+    height:auto;
+    padding:10px;
+    margin-bottom:40px;
+    border:1px solid #080808;
+    float:left;
+    background:url('http://static.tumblr.com/016efe76d69bcd010abe46825ecb911f/tt9qf5k/ZRqo0hyyk/tumblr_static_c5xda9vvsn40gsswogs44ckws.png');
+}
+
+#menu_derecha{
+    width:310px;
+    padding:0px 0px 5px 0px;
+    margin:0px 0px 320px 10px;
+    float:right;
+    background:#080808;
+}
+
+#descripcion{
+    width:280px;
+    padding:10px;
+    margin:0px 5px;
+    float:left;
+    text-align:center;
+    color:#F6F6F6;
+    background:#111111;
+}
+
+.publicidad_lateral{
+    width:300px;
+    height:250px;
+    margin:0px 5px 5px 5px;
+    float:left;
+    text-align:center;
+    background:#111111;
+}
+
+.titulo_menu{
+    width:280px;
+    padding:10px;
+    margin:5px 5px 0px 5px;
+    float:left;
+    color:#F6F6F6;
+    background:#111111;
+}
+
+#disqusbox{
+    width:280px;
+    padding:0px 10px;
+    margin:5px 5px 0px 5px;
+    float:left;
+    background:#111111;
+    overflow:hidden;
+}
+
+#disqusbox2{
+    width:300px;
+    padding-top:5px;
+    margin:5px 5px 0px 5px;
+    float:left;
+    background:#111111;
+    overflow:hidden;
+}
+
+#menu_navegacion{
+    width:300px;
+    height:150px;
+    margin:0px 5px;
+    float:left;
+}
+
+#seccion_1{
+    width:150px;
+    height:150px;
+    float:left;
+    background:url('http://static.tumblr.com/cbd72806128fa577682c93312b6951e6/tt9qf5k/cRKo1lmzb/tumblr_static_1xairjcva9hcs8gcgcskk00wc.jpg') no-repeat;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: all 0.3s;
+}
+
+#seccion_1:hover{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    
+}
+
+#seccion_2{
+    width:150px;
+    height:150px;
+    float:left;
+    background:url('http://static.tumblr.com/4a7a2bb53b58fb0c952fc4fb6301d916/tt9qf5k/9ngo1lmzb/tumblr_static_6wxfdg29by0wwwcwwoog8g0ss.jpg') no-repeat;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: all 0.3s;
+}
+
+#seccion_2:hover{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    
+}
+
+.botones_menu_principal{
+    width:280px;
+    padding:15px 10px;
+    margin:0px 5px;
+    float:left;
+    background:#222222;
+    -webkit-transition: all 0.3s;
+}
+
+.botones_menu_principal:hover{
+    background:#444444;
+}
+
+#botones_menu_navegacion{
+    width:300px;
+    height:100px;
+    margin:5px;
+    float:left;
+}
+
+#aporta{
+    width:100px;
+    height:200px;
+    float:left;
+    line-height:180px;
+    background:#009b00 url('http://static.tumblr.com/6d70f76b55e99c0411bd740b52b9e6f8/tt9qf5k/KiJo02qo1/tumblr_static_4lr9her9ylgkwsosowkcssg08.png') 0px 0px no-repeat;
+    color:#009b00;
+    -webkit-transition: margin 0.3s, background-color 0.3s, color 0.3s;
+}
+
+#aporta:hover{
+    margin-top:-8px;
+    background:#1aa51a url('http://static.tumblr.com/6d70f76b55e99c0411bd740b52b9e6f8/tt9qf5k/KiJo02qo1/tumblr_static_4lr9her9ylgkwsosowkcssg08.png') 0px -100px no-repeat;
+    color:#fff;
+}
+
+#pregunta{
+    width:100px;
+    height:200px;
+    float:left;
+    line-height:180px;
+    background:#00529f url('http://static.tumblr.com/6d70f76b55e99c0411bd740b52b9e6f8/tt9qf5k/KiJo02qo1/tumblr_static_4lr9her9ylgkwsosowkcssg08.png') -100px 0px no-repeat;
+    color:#00529f;
+    -webkit-transition: margin 0.3s, background-color 0.3s, color 0.3s;
+}
+
+#pregunta:hover{
+    margin-top:-8px;
+    background:#1a64a9 url('http://static.tumblr.com/6d70f76b55e99c0411bd740b52b9e6f8/tt9qf5k/KiJo02qo1/tumblr_static_4lr9her9ylgkwsosowkcssg08.png') -100px -100px no-repeat;
+    color:#fff;
+}
+
+#random{
+    width:100px;
+    height:200px;
+    float:left;
+    line-height:180px;
+    background:#ff4e00 url('http://static.tumblr.com/6d70f76b55e99c0411bd740b52b9e6f8/tt9qf5k/KiJo02qo1/tumblr_static_4lr9her9ylgkwsosowkcssg08.png') -200px 0px no-repeat;
+    color:#ff4e00;
+    -webkit-transition: margin 0.3s, background-color 0.3s, color 0.3s;
+}
+
+#random:hover{
+    margin-top:-8px;
+    background:#ff601a url('http://static.tumblr.com/6d70f76b55e99c0411bd740b52b9e6f8/tt9qf5k/KiJo02qo1/tumblr_static_4lr9her9ylgkwsosowkcssg08.png') -200px -100px no-repeat;
+    color:#fff;
+}
+
+#botones_menu_social{
+    width:300px;
+    height:75px;
+    margin:0px 5px;
+    float:left;
+}
+
+.contenedor_botones{
+    width:100px;
+    height:100px;
+    float:left;
+    overflow:hidden;
+}
+
+.contenedor_botones_sociales{
+    width:75px;
+    height:75px;
+    float:left;
+    overflow:hidden;
+}
+
+#social_facebook{
+    width:75px;
+    height:90px;
+    float:left;
+    line-height:140px;
+    background:#222222 url('http://static.tumblr.com/6d70f76b55e99c0411bd740b52b9e6f8/tt9qf5k/KiJo02qo1/tumblr_static_4lr9her9ylgkwsosowkcssg08.png') 0px -200px no-repeat;
+    color:#222222;
+    -webkit-transition: margin 0.3s, background-color 0.3s, color 0.3s;
+}
+
+#social_facebook:hover{
+    margin-top:-8px;
+    background:#3b5998 url('http://static.tumblr.com/6d70f76b55e99c0411bd740b52b9e6f8/tt9qf5k/KiJo02qo1/tumblr_static_4lr9her9ylgkwsosowkcssg08.png') 0px -275px no-repeat;
+    color:#fff;
+}
+
+#social_youtube{
+    width:75px;
+    height:90px;
+    float:left;
+    line-height:140px;
+    background:#222222 url('http://static.tumblr.com/6d70f76b55e99c0411bd740b52b9e6f8/tt9qf5k/KiJo02qo1/tumblr_static_4lr9her9ylgkwsosowkcssg08.png') -75px -200px no-repeat;
+    color:#222222;
+    -webkit-transition: margin 0.3s, background-color 0.3s, color 0.3s;
+}
+
+#social_youtube:hover{
+    margin-top:-8px;
+    background:#cd201f url('http://static.tumblr.com/6d70f76b55e99c0411bd740b52b9e6f8/tt9qf5k/KiJo02qo1/tumblr_static_4lr9her9ylgkwsosowkcssg08.png') -75px -275px no-repeat;
+    color:#fff;
+}
+
+#social_twitter{
+    width:75px;
+    height:90px;
+    float:left;
+    line-height:140px;
+    background:#222222 url('http://static.tumblr.com/6d70f76b55e99c0411bd740b52b9e6f8/tt9qf5k/KiJo02qo1/tumblr_static_4lr9her9ylgkwsosowkcssg08.png') -150px -200px no-repeat;
+    color:#222222;
+    -webkit-transition: margin 0.3s, background-color 0.3s, color 0.3s;
+}
+
+#social_twitter:hover{
+    margin-top:-8px;
+    background:#55acee url('http://static.tumblr.com/6d70f76b55e99c0411bd740b52b9e6f8/tt9qf5k/KiJo02qo1/tumblr_static_4lr9her9ylgkwsosowkcssg08.png') -150px -275px no-repeat;
+    color:#fff;
+}
+
+#social_tumblr{
+    width:75px;
+    height:90px;
+    float:left;
+    line-height:140px;
+    background:#222222 url('http://static.tumblr.com/6d70f76b55e99c0411bd740b52b9e6f8/tt9qf5k/KiJo02qo1/tumblr_static_4lr9her9ylgkwsosowkcssg08.png') -225px -200px no-repeat;
+    color:#222222;
+    -webkit-transition: margin 0.3s, background-color 0.3s, color 0.3s;
+}
+
+#social_tumblr:hover{
+    margin-top:-8px;
+    background:#36465d url('http://static.tumblr.com/6d70f76b55e99c0411bd740b52b9e6f8/tt9qf5k/KiJo02qo1/tumblr_static_4lr9her9ylgkwsosowkcssg08.png') -225px -275px no-repeat;
+    color:#fff;
+}
+
+#navegador_post_top{
+    width:538px;
+    margin-bottom:10px;
+    border:1px solid #080808;
+    float:left;
+    background:#111111;
+}
+
+#navegador_post_bot{
+    width:538px;
+    margin-top:-50px;
+    border:1px solid #080808;
+    float:left;
+    background:#111111;
+}
+
+#navegador_post{
+    width:538px;
+    margin-top:10px;
+    border:1px solid #080808;
+    float:left;
+    background:#111111;
+}
+
+#previo_post{
+    width:269px;
+    padding:10px 0px;
+    float:left;
+    background:#222222;
+    -webkit-transition: all 0.3s;
+}
+
+#previo_post:hover{
+    background:#444444;
+}
+
+#siguiente_post{
+    width:269px;
+    padding:10px 0px;
+    float:right;
+    background:#222222;
+    -webkit-transition: all 0.3s;
+}
+
+#siguiente_post:hover{
+    background:#444444;
+}
+
+#publicaciones{
+    width:530px;
+    height:auto;
+    float:left;
+}
+
+.pie_post{
+    width:520px;
+    padding:5px 10px;
+    float:left;
+    background:#080808;
+    color:#111111;
+}
+
+.pie_post_ask{
+    width:510px;
+    padding:5px 9px;
+    float:left;
+    background:#080808;
+    color:#F6F6F6;
+}
+
+.tiempo{
+    float:left;
+    color:#F6F6F6;
+}
+
+.tiempo2{
+    float:left;
+    color:#080808;
+}
+
+.pie_post_ask2{
+    width:480px;
+    padding:10px 19px 15px 19px;
+    margin:0px 10px;
+    float:left;
+    background:#F6F6F6;
+    color:#080808;
+    -webkit-border-bottom-right-radius: 15px;
+    -webkit-border-bottom-left-radius: 15px;
+    -moz-border-radius-bottomright: 15px;
+    -moz-border-radius-bottomleft: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.fuente{
+    float:right;
+}
+
+.fuente a{
+    color:#111111;
+    text-decoration:none;
+}
+
+.fuente a:hover{
+    color:#F6F6F6;
+    text-decoration:none;
+}
+
+.hide{
+    display:none;
+}
+
+.caption{
+    width:500px;
+    padding:10px 19px;
+    margin:1px 1px 0px 1px;
+    float:left;
+    overflow:hidden;
+    background:#111111;
+}
+
+.caption img{
+    width:500px;
+    height:auto;
+    margin-left:-20px;
+    border:10px solid #080808;
+    background:#FFFFFF;
+    cursor:context-menu;
+}
+
+.caption iframe{
+    width:500px;
+    margin-left:-20px;
+    border:10px solid #080808;
+    background:#FFFFFF;
+}
+
+.photo{
+    width:540px;
+    float:left;
+    background:#080808;
+}
+
+.photo img{
+    width:500px;
+    padding:10px;
+    border-top:10px solid #080808;
+    border-right:10px solid #080808;
+    border-left:10px solid #080808;
+    float:left;
+    background:#FFFFFF;
+    cursor:zoom-in;
+}
+
+.panorama{
+    width:540px;
+    float:left;
+    background:#080808;
+}
+
+.panorama img{
+    width:500px;
+    padding:10px;
+    border-top:10px solid #080808;
+    border-right:10px solid #080808;
+    border-left:10px solid #080808;
+    float:left;
+    background:#FFFFFF;
+    cursor:zoom-in;
+}
+
+.photoset{
+    width:540px;
+    float:left;
+    background:#080808;
+}
+
+.photoset-wrap{
+    width:500px;
+    padding:10px;
+    border-top:10px solid #080808;
+    border-right:10px solid #080808;
+    border-left:10px solid #080808;
+    float:left;
+    background:#FFFFFF;
+}
+
+
+.link{
+    width:540px;
+    float:left;
+    background:#080808;
+}
+
+.link img{
+    width:500px;
+    height:auto;
+    margin-left:-10px;
+    border:10px solid #080808;
+    background:#FFFFFF;
+    cursor:context-menu;
+}
+
+.description{
+    width:500px;
+    padding:10px;
+    margin:0px 10px;
+    float:left;
+    background:#111111;
+}
+
+.text{
+    width:540px;
+    float:left;
+    background:#080808;
+}
+
+.text img{
+    width:500px;
+    height:auto;
+    margin-left:-10px;
+    border:10px solid #080808;
+    background:#FFFFFF;
+    cursor:context-menu;
+}
+
+.video{
+    width:540px;
+    float:left;
+    background:#080808;
+}
+
+.video iframe{
+    width:500px;
+    padding:10px;
+    border-top:10px solid #080808;
+    border-right:10px solid #080808;
+    border-left:10px solid #080808;
+    float:left;
+    background:#FFFFFF;
+}
+
+.video_especial{
+    width:500px;
+    height:350px;
+    padding:10px;
+    
+    margin-bottom:10px;
+    border-bottom:10px solid #ff2600;
+    
+    border-top:10px solid #ff2600;
+    border-right:10px solid #ff2600;
+    border-left:10px solid #ff2600;
+    float:left;
+    background:#FFFFFF;
+}
+
+.video_especial iframe{
+    width:500px;
+    height:281px;
+}
+
+.boton_top{
+    width:500px;
+    padding:5px 20px;
+    margin-bottom:10px;
+    float:left;
+    overflow:hidden;
+    background:#ff2600;
+    color:#fff;
+    -webkit-transition: all 0.3s;
+}
+
+.boton_top:hover{
+    background:;
+}
+
+.audio{
+    width:540px;
+    float:left;
+    background:#080808;
+}
+
+.audio iframe{
+    width:100%;
+}
+
+.ask{
+    width:538px;
+    border-top:1px solid #080808;
+    border-right:1px solid #080808;
+    border-left:1px solid #080808;
+    float:left;
+    background:#111111;
+}
+
+.avatar_asker{
+    float:left;
+    border:1px solid #080808;
+}
+
+.pregunta{
+    width:500px;
+    margin-bottom:10px;
+    float:left;
+}
+
+.pick_arriba{
+    width:520px;
+    height:20px;
+    margin:10px 10px 0px 10px;
+    float:left;
+    background:url('http://static.tumblr.com/21340327cc35c984f5987c0115d9b7b4/tt9qf5k/EmEnycrut/tumblr_static_1ji087u99qqsswkwkg4s00o8s.png') -0px -20px no-repeat;
+}
+
+.bloque_pregunta{
+    float:left;
+    width:500px;
+    padding:14px 9px 19px 9px;
+    margin:0px 10px;
+    background:#F6F6F6;
+    color:#111111;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.bloque_respuesta{
+    float:left;
+    width:500px;
+    padding:14px 9px 10px 9px;
+    margin:10px 10px 0px 10px;
+    background:#F6F6F6;
+    color:#111111;
+    -webkit-border-top-left-radius: 15px;
+    -webkit-border-top-right-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    -moz-border-radius-topright: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.bloque_respuesta img{
+    width:500px;
+    height:auto;
+}
+
+.pick_abajo{
+    width:520px;
+    height:20px;
+    margin:0px 10px 10px 10px;
+    float:left;
+    background:url('http://static.tumblr.com/21340327cc35c984f5987c0115d9b7b4/tt9qf5k/EmEnycrut/tumblr_static_1ji087u99qqsswkwkg4s00o8s.png') -0px -0px no-repeat;
+}
+
+.quote{
+    width:540px;
+    float:left;
+    background:#080808;
+}
+
+.chat{
+    width:540px;
+    float:left;
+    background:#080808;
+}
+
+
+#menu_publicacion{
+    width:538px;
+    height:60px;
+    border-right:1px solid #080808;
+    border-bottom:1px solid #080808;
+    border-left:1px solid #080808;
+    margin-bottom:60px;
+    float:left;
+    background:#111111;
+}
+
+#avatar{
+    width:60px;
+    height:60px;
+    margin-right:1px;
+    float:left;
+    background:#080808;
+}
+
+#notas{
+    width:90px;
+    height:60px;
+    float:left;
+    line-height:55px;
+    background:#111111;
+    overflow:hidden;
+}
+
+#corazon{
+    width:40px;
+    height:40px;
+    padding:10px;
+    float:left;
+    background:#111111;
+}
+
+#tumblr{
+    width:60px;
+    height:60px;
+    margin-right:1px;
+    float:left;
+    background:#222222 url('http://static.tumblr.com/6d70f76b55e99c0411bd740b52b9e6f8/tt9qf5k/KiJo02qo1/tumblr_static_4lr9her9ylgkwsosowkcssg08.png') 0px -550px no-repeat;
+    -webkit-transition: background-color 0.3s;
+}
+
+#tumblr:hover{
+    background:#36465d url('http://static.tumblr.com/6d70f76b55e99c0411bd740b52b9e6f8/tt9qf5k/KiJo02qo1/tumblr_static_4lr9her9ylgkwsosowkcssg08.png') 0px -610px no-repeat;
+}
+
+#twitter{
+    width:60px;
+    height:60px;
+    margin-right:1px;
+    float:left;
+    background:#222222 url('http://static.tumblr.com/6d70f76b55e99c0411bd740b52b9e6f8/tt9qf5k/KiJo02qo1/tumblr_static_4lr9her9ylgkwsosowkcssg08.png') -60px -550px no-repeat;
+    -webkit-transition: background-color 0.3s;
+}
+
+#twitter:hover{
+    background:#55acee url('http://static.tumblr.com/6d70f76b55e99c0411bd740b52b9e6f8/tt9qf5k/KiJo02qo1/tumblr_static_4lr9her9ylgkwsosowkcssg08.png') -60px -610px no-repeat;
+}
+
+#facebook{
+    width:60px;
+    height:60px;
+    float:left;
+    background:#222222 url('http://static.tumblr.com/6d70f76b55e99c0411bd740b52b9e6f8/tt9qf5k/KiJo02qo1/tumblr_static_4lr9her9ylgkwsosowkcssg08.png') -120px -550px no-repeat;
+    -webkit-transition: background-color 0.3s;
+}
+
+#facebook:hover{
+    background:#3b5998 url('http://static.tumblr.com/6d70f76b55e99c0411bd740b52b9e6f8/tt9qf5k/KiJo02qo1/tumblr_static_4lr9her9ylgkwsosowkcssg08.png') -120px -610px no-repeat;
+}
+
+#comentarios{
+    width:145px;
+    height:60px;
+    float:left;
+    line-height:60px;
+    background:#222222;
+    -webkit-transition: all 0.3s;
+}
+
+#comentarios:hover{
+    background:#444444;
+}
+
+.notecontainer{
+    width:498px;
+    padding:20px;
+    border:1px solid #080808;
+    float:left;
+    background:#111111;
+    }
+
+nav {
+	position:relative;
+}
+
+nav ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+	overflow:hidden;
+}
+
+nav > ul > li {
+	float:right;
+}
+
+nav ul li a {
+    height:30px;
+    line-height:30px;
+	text-decoration:none;
+	color:#fff;
+	display:block;
+	padding:0px 20px;
+	background:#222222;
+	-webkit-transition: all 0.3s;
+}
+
+nav ul li a:hover {
+	background:#444444;
+}
+
+nav > ul > li:hover div {
+	display:table;
+}
+
+/*Submenu*/
+nav ul li div {
+	width:960px;
+	position: absolute;
+	right:9px;
+	box-sizing:border-box;
+	display:none;
+}
+
+nav ul li div ul{
+	width:300px;
+	box-sizing:border-box;
+	float:right;
+	padding:5px;
+	background:#080808;
+	margin-right:-10px;
+}
+
+nav ul li div ul:last-child {
+	border:none;
+}
+
+nav ul li div ul .titulo {
+	background:#222222;
+	color:#f2992e;
+}
+
+.titulo.azul {
+    height:30px;
+    line-height:30px;
+    padding:5px 10px;
+    background:#111111;
+    color:#F6F6F6;
+}
+
+.futubandera a{
+    height:30px;
+    line-height:30px;
+    float:left;
+	text-decoration:none;
+	color:#fff;
+	display:block;
+	padding:0px 10px;
+	background:#FB4C16 url('http://static.tumblr.com/tt9qf5k/5Sgmphcu4/ghjghj.png');
+	-webkit-transition: all 0.3s;
+}
+
+.futubandera a:hover{
+	background:#c93d12;
+}
+
+.chinascochinas a{
+    height:30px;
+    line-height:30px;
+    float:left;
+	text-decoration:none;
+	color:#fff;
+	display:block;
+	padding:0px 10px;
+	background:#FE3B80 url('http://static.tumblr.com/tt9qf5k/5Sgmphcu4/ghjghj.png');
+	-webkit-transition: all 0.3s;
+}
+
+.chinascochinas a:hover{
+	background:#cb2f66;
+}
+
+.radiofutubandera a{
+    height:30px;
+    line-height:30px;
+    float:left;
+	text-decoration:none;
+	color:#fff;
+	display:block;
+	padding:0px 10px;
+	background:#56BF4B url('http://static.tumblr.com/tt9qf5k/5Sgmphcu4/ghjghj.png');
+	-webkit-transition: all 0.3s;
+}
+
+.radiofutubandera a:hover{
+	background:#45993c;
+}
+
+.fansfutubandera a{
+    height:30px;
+    line-height:30px;
+    float:left;
+	text-decoration:none;
+	color:#fff;
+	display:block;
+	padding:0px 10px;
+	background:#5289DB url('http://static.tumblr.com/tt9qf5k/5Sgmphcu4/ghjghj.png');
+	-webkit-transition: all 0.3s;
+}
+
+.fansfutubandera a:hover{
+	background:#426eaf;
+}
+
+#barra_inferior{
+    width:858px;
+    margin-top:-50px;
+    border:solid 1px #080808;
+    float:left;
+    background:#111111;
+}
+
+#volver{
+    width:219px;
+    height:120px;
+    padding-left:100px;
+    float:left;
+    line-height:120px;
+    background:#222222 url('http://static.tumblr.com/6d70f76b55e99c0411bd740b52b9e6f8/tt9qf5k/KiJo02qo1/tumblr_static_4lr9her9ylgkwsosowkcssg08.png') -90px -340px no-repeat;
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    color:#f2992e;
+}
+
+#ver_mas{
+    width:219px;
+    height:120px;
+    padding-right:100px;
+    float:right;
+    line-height:120px;
+    background:#222222 url('http://static.tumblr.com/6d70f76b55e99c0411bd740b52b9e6f8/tt9qf5k/KiJo02qo1/tumblr_static_4lr9her9ylgkwsosowkcssg08.png') 209px -340px no-repeat;
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    color:#f2992e;
+}
+
+#volver:hover{
+    background:#444444 url('http://static.tumblr.com/6d70f76b55e99c0411bd740b52b9e6f8/tt9qf5k/KiJo02qo1/tumblr_static_4lr9her9ylgkwsosowkcssg08.png') -90px -440px no-repeat;
+    color:#FFD800;
+}
+
+#ver_mas:hover{
+    background:#444444 url('http://static.tumblr.com/6d70f76b55e99c0411bd740b52b9e6f8/tt9qf5k/KiJo02qo1/tumblr_static_4lr9her9ylgkwsosowkcssg08.png') 209px -440px no-repeat;
+    color:#FFD800;
+}
+
+#pie{
+    width:100%;
+    float:left;
+    background:#080808;
+}
+
+#contenedor_pie{
+    width:840px;
+    padding:10px;
+    margin:0px auto;
+}
+
+#tumblr_controls{
+    margin-top:30px;
+}
+
+#lightbox{
+    background-color:#FFFFFF;
+    padding:5px;
+    border:5px solid #080808;
+    z-index:9999;
+}
+                
+#lightboxDetails{
+	display:none;
+}
+                
+#lightboxCaption{
+    float: left;
+}
+    
+#keyboardMsg{
+    display:none;
+}
+    
+#closeButton{
+    display:none;
+}
+
+#lightbox img{
+    border: none;
+    clear: both;
+} 
+
+#overlay img{
+    border: none;
+}
+
+#overlay{
+    background-image: url("http://static.tumblr.com/3driglx/NO3kxi1h4/overlay.png");
+}
+        
+* html #overlay{
+	background-color: #333;
+	back\ground-color: transparent;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static.tumblr.com/3driglx/NO3kxi1h4/overlay.png", sizingMethod="scale");
+}
+
+#publicidad_arriba_abajo{
+    width:728px;
+    height:90px;
+    padding:10px 10px;
+    margin:0px 57px 10px 57px;
+    float:left;
+    background:#000;
+}
+
+#publicidad_lateral{
+    width:300px;
+    height:250px;
+    margin:0px 5px 5px 5px;
+    float:left;
+    background:#000;
+}
+
+#publicidad_lateral_especial{
+    width:300px;
+    height:600px;
+    padding:5px;
+    margin-top:5px;
+    float:right;
+    background:#000;
+}
+
+#publicidad_lateral_abajo{
+    width:300px;
+    height:250px;
+    padding:5px;
+    background:#000;
+    float:right;
+    margin:-271px -1px 0px 0px;
+}
+
+#publicidad_footer{
+    width:728px;
+    height:90px;
+    padding:10px 66px;
+    margin-top:10px;
+    float:left;
+    background:#000;
+}
+
+#desafio{
+    width:300px;
+    height:300px;
+    margin:0px 5px 5px 5px;
+    float:left;
+    background:#000 url('http://static.tumblr.com/48da69a1e019a4fd25a260d957c5b468/tt9qf5k/oTJo1c3m4/tumblr_static_84fv7rew8i88ws80o0s00oscs.gif') no-repeat;
+}
+
+#scrollToTop:link, 
+#scrollToTop:visited {
+  display:none;
+  position:fixed;
+  bottom:200px;
+  right:10px;
+}
+
+#abajo_derecha {
+  position:fixed;
+  bottom:-5px;
+  right:0px;
+}
+
+</style>
+</head>
+
+<body>
+<div id="barra_superior"><!-- barra superior -->
+        
+            <div id="menu_barra_superior"><!-- menu barra superior -->
+
+        <nav>
+			<ul>
+			
+				<div class="futubandera"><a href="/" title="Volver a la pagina de inicio"><h3>nom</h3></a></li></div>
+				<div class="fansfutubandera"><a href="Volver a la pagina de inicio/" target="_blank"><h3>nom </h3></a></div>
+				<div class="radiofutubandera"><a href="Volver a la pagina de inicio" target="_blank"><h3>nom</h3></a></div>
+				<div class="chinascochinas"><a href="Volver a la pagina de inicio" target="_blank"><h3>nom</h3></a></div>
+				
+				<li><a href="#"><h3>¿Que quieres ver?</h3></a>
+ 
+				<div>
+				
+				    <ul>
+						<li class="titulo azul"><h2>Categorias</h2></li>
+						<li><a href="/tagged/fail"  title="Cuando algo sale mal y las cosas no resultan como esperabas."><h3>fail</h3></a></li>
+						<li><a href="/tagged/omg"  title="Cuando sucede algo increible e insperado."><h3>omg</h3></a></li>
+						<li><a href="/tagged/win" title="Cuando se consigue eso que parece imposible."><h3>win</h3></a></li>
+						<li><a href="/tagged/wtf" title="Cuando no te puedes explicar como paso eso."><h3>wtf</h3></a></li>
+					</ul>
+
+					<ul>
+						<li class="titulo azul"><h2>Temas</h2></li>
+						<li><a href="/tagged/animales"><h3>animales</h3></a></li>
+						<li><a href="/tagged/deporte"><h3>deporte</h3></a></li>
+						<li><a href="/tagged/politica"><h3>politica</h3></a></li>
+						<li><a href="/tagged/television"><h3>television</h3></a></li>
+					</ul>
+					
+					<ul>
+						<li class="titulo azul"><h2>Tendencias</h2></li>
+						<li><a href="/tagged/anime"><h3>anime</h3></a></li>
+						<li><a href="/tagged/cosplay"><h3>cosplay</h3></a></li>
+						<li><a href="/tagged/retro"><h3>retro</h3></a></li>
+						<li><a href="/tagged/videojuegos"><h3>videojuegos</h3></a></li>
+					</ul>
+
+				</div>
+</li>
+				
+				<li><a href="/tagged/imagenes"><h3>img</h3></a></li>
+				<li><a href="/tagged/gif"><h3>gif</h3></a></li>
+				<li><a href="/tagged/videos"><h3>vid</h3></a></li>
+
+			</ul>
+		</nav>
+
+            </div><!-- menu barra superior -->
+        
+        </div><!-- barra superior -->
+
+
+
+        <div id="contenedor"><!-- contenedor general -->
+            
+            <!-- cabecera -->
+
+            <div id="cuerpo"><!-- cuerpo -->
+            
+<!-- <div id="publicidad_arriba_abajo"></div> -->
+            
+            <div id="publicaciones"><!-- publicaciones -->
+
+                            
+                            
+                            
+
+
+
+                
+                    
+                </div><!-- publicaciones -->
+
+	<header>
+	<div class="container">
+		<img class="avatar" src="{PortraitURL-128}">
+		<h1><a href="{BlogURL}">{Title}</a></h1>
+		{block:Description}
+			<h2>{Description}</h2>
+		{/block:Description}
+	</div>
+	</header>
+	
+	{block:HasPages}
+	  <div class="page">
+	  {block:Pages}
+	  <div class="pagelist">
+	  <a href="{URL}">{Label}</a>
+	  </div>
+	  {/block:Pages}
+	  </div>
+	{/block:HasPages}
+	{block:Posts}
+		{block:Text}
+		<div class="post">
+			{block:Title}
+				<h3>
+					<a href="{Permalink}">{Title}</a>
+				</h3>
+			{/block:Title}
+			{Body}
+			<ul class="like-reblog">
+				<li>{LikeButton}</li>
+				<li>{ReblogButton}</li>
+				<li>{block:NoteCount}<a href="{permalink}#notes">{NoteCountWithLabel}</a>{/block:NoteCount}</li>
+					<li>{block:Date}<a href="{Permalink}">{TimeAgo}</a>{/block:Date}</li>
+			</ul>
+		</div>
+		{block:PostNotes}{PostNotes}{/block:postNotes}
+		{/block:Text}
+
+		{block:Photo} 
+		<div class="post">	
+			<img src="{PhotoURL-500}">
+			{block:Caption}{Caption}{/block:Caption}
+			<ul class="like-reblog">
+				<li>{LikeButton}</li>
+				<li>{ReblogButton}</li>
+				<li>{block:NoteCount}<a href="{permalink}#notes">{NoteCountWithLabel}</a>{/block:NoteCount}</li>
+					<li>{block:Date}<a href="{Permalink}">{TimeAgo}</a>{/block:Date}</li>
+			</ul>
+		</div>
+		{block:PostNotes}{PostNotes}{/block:postNotes}
+		{/block:Photo}
+
+		{block:Quote}
+		<div class="post">
+			{Quote}
+	   	{block:Source}<br>&mdash;{Source}{/block:Source}
+			<ul class="like-reblog">
+				<li>{LikeButton}</li>
+				<li>{ReblogButton}</li>
+				<li>{block:NoteCount}<a href="{permalink}#notes">{NoteCountWithLabel}</a>{/block:NoteCount}</li>
+					<li>{block:Date}<a href="{Permalink}">{TimeAgo}</a>{/block:Date}</li>
+			</ul>
+		</div>
+		{block:PostNotes}{PostNotes}{/block:postNotes}
+		{/block:Quote}
+
+		{block:Link}
+		<div class="post">
+  			<a href="{URL}" {Target}>{Name}</a>
+  			{block:Description}{Description}{/block:Description}
+			<ul class="like-reblog">
+				<li>{LikeButton}</li>
+				<li>{ReblogButton}</li>
+				<li>{block:NoteCount}<a href="{permalink}#notes">{NoteCountWithLabel}</a>{/block:NoteCount}</li>
+					<li>{block:Date}<a href="{Permalink}">{TimeAgo}</a>{/block:Date}</li>
+			</ul>
+		</div>
+		{block:PostNotes}{PostNotes}{/block:postNotes}
+		{/block:Link}
+
+		{block:Chat}
+		<div class="post">
+			{block:Title}{Title}{/block:Title}
+			<table>
+				{block:Lines}
+				<tr>
+					<th>{block:Label}{Label}{/block:Label}</th>
+					<td>{Line}</td>
+				</tr>
+				{/block:Lines}
+			</table>
+			<ul class="like-reblog">
+				<li>{LikeButton}</li>
+				<li>{ReblogButton}</li>
+				<li>{block:NoteCount}<a href="{permalink}#notes">{NoteCountWithLabel}</a>{/block:NoteCount}</li>
+					<li>{block:Date}<a href="{Permalink}">{TimeAgo}</a>{/block:Date}</li>
+			</ul>
+		</div>
+		{block:PostNotes}{PostNotes}{/block:postNotes}
+		{/block:Chat}
+
+		{block:Audio}
+		<div class="post">
+			{AudioPlayer}
+      	{block:Caption}{Caption}{/block:Caption}
+			<ul class="like-reblog">
+				<li>{LikeButton}</li>
+				<li>{ReblogButton}</li>
+				<li>{block:NoteCount}<a href="{permalink}#notes">{NoteCountWithLabel}</a>{/block:NoteCount}</li>
+					<li>{block:Date}<a href="{Permalink}">{TimeAgo}</a>{/block:Date}</li>
+			</ul>
+		</div>
+		{block:PostNotes}{PostNotes}{/block:postNotes}
+		{/block:Audio}
+
+		{block:Video}
+		<div class="post">
+			{Video-500}
+			{block:Caption}{Caption}{/block:Caption}
+			<ul class="like-reblog">
+				<li>{LikeButton}</li>
+				<li>{ReblogButton}</li>
+				<li>{block:NoteCount}<a href="{Permalink}#notes">{NoteCountWithLabel}</a>{/block:NoteCount}</li>
+				<li>{block:Date}<a href="{Permalink}">{TimeAgo}</a>{/block:Date}</li>
+			</ul>
+		</div>
+					{block:PostNotes}{PostNotes}{/block:postNotes}
+		{/block:Video}
+
+	{/block:Posts}
+	
+	{block:Pagination}
+	<div class="pagenav">
+	  {block:PreviousPage}<a href="{PreviousPage}">Previous</a>{/block:PreviousPage}
+	  {block:NextPage}<a href="{NextPage}">Next</a>{/block:NextPage}
+	</div>
+	{/block:Pagination}
+</html>
